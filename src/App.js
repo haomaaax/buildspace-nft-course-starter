@@ -13,12 +13,12 @@ const TOTAL_MINT_COUNT = 50;
 const App = () => {
 
   /*
-  * Just a state variable we use to store our user's public wallet. Don't forget to import useState.
+  * Just a state variable we use to store our user's public wallet.
   */
   const [currentAccount, setCurrentAccount] = useState("");
   
   /*
-  * Gotta make sure this is async.
+  * Gotta make sure wallet is async.
   */
   const checkIfWalletIsConnected = async () => {
     const { ethereum } = window;
@@ -36,7 +36,7 @@ const App = () => {
     const accounts = await ethereum.request({ method: 'eth_accounts' });
 
     /*
-    * User can have multiple authorized accounts, we grab the first one if its there!
+    * User can have multiple authorized accounts, we grab the first one if its there.
     */
     if (accounts.length !== 0) {
       const account = accounts[0];
@@ -62,7 +62,7 @@ const App = () => {
       const accounts = await ethereum.request({ method: "eth_requestAccounts" });
 
       /*
-      * Boom! This should print out public address once we authorize Metamask.
+      * Print out public address once we authorize Metamask.
       */
       console.log("Connected", accounts[0]);
       setCurrentAccount(accounts[0]); 
@@ -88,7 +88,7 @@ const App = () => {
         console.log("Mining...please wait.")
         await nftTxn.wait();
         
-        console.log(`Mined, see transaction: https://rinkeby.etherscan.io/tx/${nftTxn.hash}`);
+        console.log(`Minted, see transaction: https://rinkeby.etherscan.io/tx/${nftTxn.hash}`);
   
       } else {
         console.log("Ethereum object doesn't exist!");
@@ -113,15 +113,15 @@ const App = () => {
     <div className="App">
       <div className="container">
         <div className="header-container">
-          <p className="header gradient-text">My NFT Collection</p>
+          <p className="header gradient-text">Metaverse security NFT Collection</p>
           <p className="sub-text">
-            Each unique. Each beautiful. Discover your NFT today.
+            Limited edition. Mint your awesome NFT today.
           </p>
           {currentAccount === "" ? (
             renderNotConnectedContainer()
           ) : (
             <button onClick={askContractToMintNft} className="cta-button connect-wallet-button">
-              Mint NFT
+              Mint my NFT
             </button>
           )}
         </div>
