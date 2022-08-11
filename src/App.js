@@ -7,7 +7,7 @@ import myEpicNft from './utils/MyEpicNFT.json';
 // Constants
 const TWITTER_HANDLE = 'haomaaax';
 const TWITTER_LINK = `https://twitter.com/${TWITTER_HANDLE}`;
-const OPENSEA_LINK = '';
+const OPENSEA_LINK = 'https://testnets.opensea.io/collection/metaversesecuritynft-v2';
 const TOTAL_MINT_COUNT = 50;
 
 // The contract address linked to web app
@@ -159,6 +159,11 @@ const App = () => {
               Mint my NFT
             </button>
           )}
+        </div>
+        <div>
+          <button className="cta-button" href={OPENSEA_LINK}>
+            🌊 View Collection on OpenSea
+          </button>
         </div>
         <div className="footer-container">
           <img alt="Twitter Logo" className="twitter-logo" src={twitterLogo} />
