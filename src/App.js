@@ -140,6 +140,11 @@ const App = () => {
     </button>
   );
 
+  const openseaLinkClicked = () => {
+    const url = {OPENSEA_LINK};
+    window.open(url, '_blank');
+  }
+
   useEffect(() => {
     checkIfWalletIsConnected();
   }, [])
@@ -161,7 +166,7 @@ const App = () => {
           )}
         </div>
         <div>
-          <button onclick={window.open({OPENSEA_LINK}, "_blank")} className="cta-button opensea-button">
+          <button onclick={openseaLinkClicked} className="cta-button opensea-button">
             🌊 View Collection on OpenSea
           </button>
         </div>
