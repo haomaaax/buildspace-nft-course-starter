@@ -161,7 +161,7 @@ const App = () => {
           )}
         </div>
         <div>
-          <button onclick={()=> window.open({OPENSEA_LINK}, "_blank")} className="cta-button opensea-button">
+          <button onclick={window.open({OPENSEA_LINK}, "_blank")} className="opensea-button">
             🌊 View Collection on OpenSea
           </button>
         </div>
