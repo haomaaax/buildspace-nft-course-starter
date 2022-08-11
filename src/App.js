@@ -3,7 +3,7 @@ import './styles/App.css';
 import twitterLogo from './assets/twitter-logo.svg';
 
 // Constants
-const TWITTER_HANDLE = '_buildspace';
+const TWITTER_HANDLE = 'haomaaax';
 const TWITTER_LINK = `https://twitter.com/${TWITTER_HANDLE}`;
 const OPENSEA_LINK = '';
 const TOTAL_MINT_COUNT = 50;
