@@ -136,7 +136,7 @@ const App = () => {
   // Render Methods
   const renderNotConnectedContainer = () => (
     <button onClick={connectWallet} className="cta-button connect-wallet-button">
-      Connect to Wallet
+      ⛓️Connect to Wallet
     </button>
   );
 
@@ -156,20 +156,23 @@ const App = () => {
             renderNotConnectedContainer()
           ) : (
             <button onClick={askContractToMintNft} className="cta-button connect-wallet-button">
-              Mint my NFT
+              ✨Mint my NFT
             </button>
           )}
         </div>
-        <div className="footer-container">
-        <button
+
+        <button>
+          <a
             className="cta-button opensea-button"
             href={OPENSEA_LINK}
             target="_blank"
             rel="noreferrer"
-          > View on OpenSea</button>
-          
+           >🌊View on OpenSea
+          </a>
+        </button>
+
+        <div className="footer-container">
           <img alt="Twitter Logo" className="twitter-logo" src={twitterLogo} />
-          
           <a
             className="footer-text"
             href={TWITTER_LINK}
