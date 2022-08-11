@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import './styles/App.css';
 import twitterLogo from './assets/twitter-logo.svg';
 import { ethers } from "ethers";
+import myEpicNft from './utils/MyEpicNFT.json';
 
 // Constants
 const TWITTER_HANDLE = 'haomaaax';
@@ -119,7 +120,7 @@ const App = () => {
           {currentAccount === "" ? (
             renderNotConnectedContainer()
           ) : (
-            <button onClick={null} className="cta-button connect-wallet-button">
+            <button onClick={askContractToMintNft} className="cta-button connect-wallet-button">
               Mint NFT
             </button>
           )}
