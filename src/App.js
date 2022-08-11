@@ -136,7 +136,7 @@ const App = () => {
   // Render Methods
   const renderNotConnectedContainer = () => (
     <button onClick={connectWallet} className="cta-button connect-wallet-button">
-      ⛓️Connect to Wallet
+      Connect to Wallet
     </button>
   );
 
@@ -167,7 +167,7 @@ const App = () => {
             href={OPENSEA_LINK}
             target="_blank"
             rel="noreferrer"
-           >🌊View on OpenSea
+           >🌊View Collection on OpenSea
           </a>
         </button>
         </div>
