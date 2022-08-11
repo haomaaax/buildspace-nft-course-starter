@@ -160,13 +160,16 @@ const App = () => {
             </button>
           )}
         </div>
-        <div>
-          <button onclick={()=> window.open({OPENSEA_LINK}, "_blank")} className="cta-button opensea-button">
-            🌊 View Collection on OpenSea
-          </button>
-        </div>
         <div className="footer-container">
+        <button
+            className="cta-button opensea-button"
+            href={OPENSEA_LINK}
+            target="_blank"
+            rel="noreferrer"
+          > View on OpenSea</button>
+          
           <img alt="Twitter Logo" className="twitter-logo" src={twitterLogo} />
+          
           <a
             className="footer-text"
             href={TWITTER_LINK}
