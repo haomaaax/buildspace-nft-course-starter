@@ -11,7 +11,7 @@ const OPENSEA_LINK = 'https://testnets.opensea.io/collection/metaversesecuritynf
 const TOTAL_MINT_COUNT = 50;
 
 // The contract address linked to web app
-const CONTRACT_ADDRESS = "0x4300e9DBD79c1f3b4e1165EE94bca630BCC0DEf4";
+const CONTRACT_ADDRESS = "0x629CDe4c19D67f4e19Aba37b88716B331FDbca9F";
 
 const App = () => {
 
@@ -118,7 +118,7 @@ const App = () => {
         const connectedContract = new ethers.Contract(CONTRACT_ADDRESS, myEpicNft.abi, signer);
   
         console.log("Going to pop wallet now to pay gas...")
-        let nftTxn = await connectedContract.makeEvaGreatAgain();
+        let nftTxn = await connectedContract.makeEvaEpic();
   
         console.log("Mining...please wait.")
         await nftTxn.wait();
