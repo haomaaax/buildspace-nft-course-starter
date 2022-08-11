@@ -161,6 +161,7 @@ const App = () => {
           )}
         </div>
 
+        <div className="footer-container">
         <button className="cta-button opensea-button">
           <a
             href={OPENSEA_LINK}
@@ -169,6 +170,7 @@ const App = () => {
            >🌊View on OpenSea
           </a>
         </button>
+        </div>
 
         <div className="footer-container">
           <img alt="Twitter Logo" className="twitter-logo" src={twitterLogo} />
