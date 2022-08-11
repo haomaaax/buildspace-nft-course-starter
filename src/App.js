@@ -11,7 +11,7 @@ const OPENSEA_LINK = 'https://testnets.opensea.io/collection/metaversesecuritynf
 const TOTAL_MINT_COUNT = 50;
 
 // The contract address linked to web app
-const CONTRACT_ADDRESS = "0x20d6cc10062f4c9b958cc439Ef52F292940d8Db6";
+const CONTRACT_ADDRESS = "0x4300e9DBD79c1f3b4e1165EE94bca630BCC0DEf4";
 
 const App = () => {
 
