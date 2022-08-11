@@ -162,13 +162,13 @@ const App = () => {
         </div>
 
         <div className="footer-container">
-        <button className="cta-button opensea-button">
-          <a
+        <button className="cta-button opensea-button"
+          
             href={OPENSEA_LINK}
             target="_blank"
             rel="noreferrer"
            >🌊View on OpenSea
-          </a>
+          
         </button>
         </div>
 
