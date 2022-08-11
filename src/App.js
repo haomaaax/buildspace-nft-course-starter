@@ -11,7 +11,7 @@ const OPENSEA_LINK = '';
 const TOTAL_MINT_COUNT = 50;
 
 // The contract address linked to web app
-const CONTRACT_ADDRESS = "0x4c045c4247333a9B877b2aBD29CCa1B243077D93";
+const CONTRACT_ADDRESS = "0x639f30Cd395FC70B36E9a353FfE59aADcE7D6c95";
 
 const App = () => {
 
